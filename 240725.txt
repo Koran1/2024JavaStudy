@@ -1,0 +1,43 @@
+Application Program
+ex) ppt, pdf, excel, POS 기계, 게임 등
+- browser를 통해 실행하지 않음
+- TCP/IP 통신 기반
+- "설치" 후 사용 가능
+
+Web Program
+- broswer를 통해서만 작동
+- local의 장치 data access 가 불가능 = local 장비 (카메라, 마이크) control 불가능 
+
++여기에 많은 기능(App)을 추가하면 Web App 서비스
+ex) Google Chrome 내 ppt, excel 과 같은 서비스들
+
+++ Web을 App처럼 Packaging 시키면 local 장비 사용가능 = Hybrid Web Applicaton
+
+* Native APP 	VS Web APP	VS Hybrid Web App
+- 폐쇄적임					- browser를 통해 마치 Native App 처럼 작동
+- 장비 제어용				- but 처리속도는 상대적으로 느림 b/c browser를 한번 거치기 때문
+- 빠른 처리속도 
+ex)금융, 장비제어
+
+비교예시)
+Naver 앱 실행 시 -> Application Program
+Chrome 켜서 m.naver.com -> Web App 서비스
+
+개발 시장이 다양한 고객을 목표로 하므로 Web App 서비스가 많아짐
+ex) App 설치 용량 부족시 Web으로도 실행 가능해짐
+ex) 휴대폰 성능 부족으로 App 실행 못할 시 Web으로도 사용가능
+
+데이터처리방식 2가지
+1) 중앙처리 방식 -> 중앙에서 모든 데이터 관리
+치명적 단점) 너무 쉽게 위조&변조 가능 (=해킹)
+2) 분산처리 방식 -> 데이터들이 중앙으로 결집되지 않고 여러 곳에 분산
+-> 51퍼 이상의 승인 받아야 데이터 처리 = 보안에 강하다
+
+기존) Local: Web App UI			 --------- 외부: Web Server + Database Resources
+최신)  Local: Web App UI + "Local Data"	 --------- 외부: Web Server + Database Resources
+
+Local Storage 기능으로 Offline 되더라도 제한적인 Web Application 사용이 가능함
+ex) Google의 Gmail은 internet이 끊겨도 text 까지는 접근 가능
+
+프레임워크 -> 자유롭게 수정 가능함
+라이브러리 -> 제공해주는 기능만 사용 가능 수정 삭제 거의 다 불가능
